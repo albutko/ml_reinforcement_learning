@@ -14,7 +14,7 @@ To open this use the following command
 jupyter notebook Reinforcement\ Learning.ipynb
 
 Then to recreate any experiments you can either run the entire notebook or run the necessary
-cells. Make sure that you set the problem environment before running any tests. These cells
+cells. Make sure that you set the problem environment if you want to run a specific test. These cells
 include a comment # RUN TO DEFINE PROBLEM.
 
 The jupyter notebook is divided similar to the report and can be navigated using the headers

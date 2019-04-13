@@ -316,8 +316,6 @@ def policy_map(policy, values, env, title=''):
     plt.xticks([])
     plt.yticks([])
     plt.title(title)
-    plt.savefig('./images/policymap.png', bbox_inches='tight')
-    plt.show()
 
 def policy_map_q(policy, q_values, env, title='',file=''):
     values = list()
@@ -352,8 +350,10 @@ def policy_map_q(policy, q_values, env, title='',file=''):
     plt.xticks([])
     plt.yticks([])
     plt.title(title)
-    plt.savefig(file, bbox_inches='tight')
-    plt.show()
+    if file != '':
+        plt.savefig(file, bbox_inches='tight')
+    
+
 def run_policy(policy, env, iters=100):
     rewards = list()
     steps_per_episode = list()
